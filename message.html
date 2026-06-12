@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>message</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <script src="message.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header>
+        <div class="time">
+            <p id="time"></p>
+        </div>
+        <div class="status_icons">
+            <div class="wifi">
+                <span class="dot"></span>
+                <span class="arc arc1"></span>
+                <span class="arc arc2"></span>
+                <span class="arc arc3"></span>
+            </div>
+            <div class="network"><i class="fa-solid fa-signal"></i></div>
+            <div class="battery">
+                <div id="level" class="level"></div>
+                <h2 id="status" class="status">Checking battery...</h2>
+            </div>
+        </div>
+    </header>
+    <div id="home" class="messenger_container">
+        <h2>Chats</h2>
+        <div id="chat_list"></div>
+        <button id="new_chat_button">➕</button>
+    </div>
+    <div id="chat_page" class="page hidden">
+        <button id="back_button">⬅ Back</button>
+        <h2 id="chat_title">New Chat</h2>
+        <div id="chat_messages"></div>
+        <div class="chat_input">
+            <input type="text" id="message_input" placeholder="Type a message ...">
+            <button id="send_button">Send</button>
+        </div>
+    </div>
+        <footer style="margin-top:473px;">
+  <div class="icons">
+    <a href="phone.html"><div class="phone"><i class="fa-solid fa-phone"></i></div></a>
+    <a href="message.html"><div class="message"><i class="fa-solid fa-message"></i></div></a>
+    <a href="index.html"><div class="home"><i class="fa-solid fa-house"></i></div></a>
+    <div class="camera"><i class="fa-solid fa-camera"></i></div>
+    <a href="https://www.google.com/"><div class="chrome"><i class="fa-brands fa-chrome"></i></div></a>
+  </div>
+</footer>
+</body>
+</html>
